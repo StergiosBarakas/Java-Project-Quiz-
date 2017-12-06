@@ -286,7 +286,7 @@ package quizjava;
 						getContentPane().add(comboBox7);
 						comboBox7.addItem("A disease");
 						comboBox7.addItem("Another term for an aneurysm");
-						comboBox7.addItem("An defence mechanism");
+						comboBox7.addItem("A defence mechanism");
 						
 						textField_7 = new JTextField();
 						textField_7.setEditable(false);
@@ -302,7 +302,7 @@ package quizjava;
 						public void actionPerformed(ActionEvent arg0) {
 							sol7 = new Num7(comboBox7.getSelectedItem().toString());
 							JOptionPane.showMessageDialog(rootPane, sol7.greet());			
-							if(sol7.greet()=="Correct") {textField_7.setText("The blood–brain barrier acts to protect the brain from pathogens.");}
+							if(sol7.greet()=="Correct") {textField_7.setText("The bloodÂ–brain barrier acts to protect the brain from pathogens.");}
 							else if(sol7.greet()!="Correct"){textField_7.setText("Correct answer: A defence mechanism");}
 							comboBox7.setEnabled(false);
 						}
